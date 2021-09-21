@@ -1,0 +1,404 @@
+/* GLOBALS */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    scroll-behavior: smooth;
+}
+
+/* UTILIDADES */
+.container {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.button {
+    border: 2px solid #1c6698;
+    border-radius: 3px;
+    padding: 13px 36px 13px 37px;
+    color: #1c6698;
+}
+
+.section__title {
+    font-size: 20px;
+    letter-spacing: 1.67px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 64px;
+    padding: 20px 24px;
+    background-color: #000;
+}
+
+.navigation {
+    color: white;
+}
+
+.navigation__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__title {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.navigation__menu {
+    background-color: #a2a2a2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__burguer__menu {
+    z-index: 999;
+    background: unset;
+    border: unset;
+    outline: unset;
+}
+
+.navigation__menu li {
+    margin-bottom: 30px;
+}
+
+.navigation__menu li a {
+    color: #1c6698;
+    font-size: 18px;
+    letter-spacing: 1.93px;
+}
+
+.navigation__icon__open {
+    font-size: 20px;
+    color: white;
+}
+
+.navigation__icon__close {
+    font-size: 20px;
+    color: black;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* PRESENTACION */
+.presentacion {
+    background-color: #e7e7e7;
+}
+
+.presentacion__welcome {
+    font-family: Roboto, serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.presentacion__title {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.presentacion__button a {
+    color: #1c6698;
+    font-weight: 700;
+    font-family: Roboto, serif;
+}
+
+/* SOBRE MI */
+.sobreMi {
+    background-color: #000;
+    color: white;
+}
+
+.sobremi__description {
+    font-family: Roboto, serif;
+    line-height: 1.43;
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+.sobremi__description p:first-child {
+    color: #a2a2a2;
+}
+
+.sobremi__video {
+    max-width: 100%;
+}
+
+/* HABILIDADES */
+.habilidades {
+    background-color: #a2a2a2;
+}
+
+.habilidades_skills {
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    width: 240px;
+}
+
+.habilidades__skill {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px 31px 30px 34px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.skill__title {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    color: #a2a2a2;
+    border: 1px solid #fff;
+    padding: 4px;
+    margin-bottom: 64px;
+}
+
+.skill__subtitle {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.skill__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #a2a2a2;
+    margin-bottom: 45px;
+}
+
+.devtools__description {
+    line-height: .3;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #a2a2a2;
+}
+
+.contact__title {
+    margin-bottom: 50px;
+}
+
+form {
+    text-align: left;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    background-color: #a2a2a2;
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.form__textarea {
+    width: 100%;
+    background-color: #a2a2a2;
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.form__button__div {
+    display: flex;
+    justify-content: center;
+}
+
+.form__button {
+    background-color: #a2a2a2;
+}
+
+.form__button:hover {
+    background-color: #1c6698;
+    color: #fff;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    position: fixed;
+    color: white;
+    height: 104px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+    bottom: 0;
+}
+
+/** MEDIA QUERIES **/
+@media only screen and (min-width: 768px) {
+
+    .container {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    /* HEADER */
+    .navigation__icon {
+        font-size: 0px !important;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation__menu {
+        display: block !important;
+        margin-block-end: 0 !important;
+        margin-block-start: 0 !important;
+        background-color: inherit;
+        position: static;
+        width: auto;
+    }
+
+    .navigation__title,
+    .navigation__menu li{
+        font-size: 20px;
+    }
+
+    .navigation__menu li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .navigation__menu li a {
+        color: #fff;
+        transition: .3s;
+    }
+
+    .navigation__burguer__menu {
+        display: none;
+    }
+
+    /* PRESENTACION */
+    .presentacion__title {
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
+
+    /* SOBRE MI */
+    .sobremi__description {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .sobremi__video {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* HABILIDADES */
+    .habilidades_skills {
+        width: 100%;
+        overflow-x: hidden;
+        justify-content: space-around;
+    }
+
+    .habilidades__skill {
+        width: 35%;
+    }
+
+    .skill__subtitle,
+    .skill__description,
+    .skill__title{
+        font-size: 20px;
+    }
+
+    /* CONTACT */
+    .contact__container {
+        margin-right: 300px;
+        margin-left: 300px;
+    }
+
+    .contact__title {
+        margin-bottom: 100px;
+    }
+
+    .form__inputs {
+        display: flex;
+
+    }
+
+    .form__label {
+        font-size: 20px;
+    }
+
+    .form__input {
+        width: 100%;
+        height: 50px;
+    }
+
+    .form__inputs__input {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .form__inputs__input:last-child {
+        margin-right: 0;
+    }
+
+    .form__textarea {
+        height: 300px;
+    }
+
+    .form__button__div {
+        margin-top: 5%;
+    }
+
+}
+
